@@ -1,0 +1,9 @@
+game_list = ['#','x','o','x','o','x','o','x','o','x']
+from IPython.display import clear_output
+def display(game_list):
+    print(game_list[9] ,game_list[8] , game_list[7] )
+    print(game_list[6] ,game_list[5] , game_list[4] )
+    print(game_list[3] ,game_list[2] , game_list[1] )
+
+
+display(game_list)
