@@ -1,0 +1,33 @@
+import sys
+
+user1 = str(input('what is your name?'))
+user2 = str(input('what is your name?'))
+
+user_name1 = str(input('%s,choose from rock,paper,sicsor?'%user1 ))
+user_name2 = str(input('%s,choose from rock,paper,sicsor?'%user2 ))
+
+def compare(u1, u2):
+    if u1 == u2:
+        return('draw')
+    elif u1 == 'rock':
+            if  u2 == 'paper':
+                return ('paper wins')
+            else:
+                return('sicsor wins')
+    elif u1 == 'paper':
+            if  u2 == 'sicsor':
+                return ('sicsor wins')
+            else:
+                return('rock wins')
+    elif u1 == 'rock':
+            if  u2 == 'sicsor':
+                return ('rock wins')
+            else:
+                return('paper wins')
+    else:
+        return ('inavalid input')
+        sys.exit()
+        
+print(compare(user_name1,user_name2))
+    
+    
